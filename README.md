@@ -75,7 +75,8 @@ source .env/bin/activate
 pip install -r requirements.txt
 ```
 现在可以开始编辑基础设施了   
-
+## Lab 1 &2 的架构图
+![architecture](./img/arc.png)
 ## Lab 1 ExistVpc+New1EC2+2EBS+UserData  
 在现有 VPC 上新建1个 EC2 ，自定制2个 EBS ，配置 EC2 UserData，安全组  
 * 打开 app.py 替换代码并修改以下 Account ID 为你的AWS Account ID, 要部署的 Region。这里因为是在现有 VPC 中部署，需要读取 VPC 信息，还需要读取 Region 信息，所以需要手工设置 Account 和 Region。  
@@ -95,7 +96,7 @@ linux_ami = ec2.GenericLinuxImage({
 定义要部署的现有VPC ID，EC2 类型，登录EC2 Key的名称，还有使用Region的 EC2 AMI ID。这里用了指定 AMI ID 的方式。如果只想使用最新的 Amazon Linux AMI，则可以参考 Lab2 的方法使用ec2.AmazonLinuxImage方法。  
 如需修改参数，可以参考 [AWS CDK 文档](https://docs.aws.amazon.com/cdk/api/latest/python/index.html)  
 或者在 VSCode 中查看在线帮助: ALT + Mouse Over  
-或者在 PyCharm 中启用 Quick Documentation: COMMAND + J  
+或者在 PyCharm 中启用 Quick Documentation: CTL + J  
 * 打开 ./user_data/user_data.sh 根据需要修改 UserData
 * 在 Terminal 终端中部署:
 ```bash

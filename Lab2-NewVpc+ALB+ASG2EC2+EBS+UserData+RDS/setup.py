@@ -9,7 +9,7 @@ setuptools.setup(
     name="cdk_vpc_ec2",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="CDK Example of VPC EC2 RDS",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
@@ -22,7 +22,8 @@ setuptools.setup(
         "aws-cdk.core",
         "aws-cdk.aws-ec2",
         "aws-cdk.aws-elasticloadbalancingv2",
-        "aws-cdk.aws-autoscaling"
+        "aws-cdk.aws-autoscaling",
+        "aws-cdk.aws-rds"
     ],
 
     python_requires=">=3.6",
