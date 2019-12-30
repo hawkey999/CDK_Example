@@ -60,7 +60,7 @@ cdk init app --language=python
         "aws-cdk.aws-s3",
         "aws-cdk.aws-ec2",
         "aws-cdk.aws-elasticloadbalancingv2",
-        "aws-cdk.aws-autoscaling"
+        "aws-cdk.aws-autoscaling",
         "aws-cdk.aws-certificatemanager",
         "aws-cdk.aws-apigateway",
         "aws-cdk.aws-cloudwatch",
