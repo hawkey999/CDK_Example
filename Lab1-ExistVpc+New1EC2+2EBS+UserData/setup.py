@@ -6,14 +6,14 @@ with open("README.md") as fp:
 
 
 setuptools.setup(
-    name="cdk_vpc_ec2",
-    version="0.0.1",
+    name="Import_VPC_Create_EC2",
+    version="1.0.0",
 
-    description="An empty CDK Python app",
+    description="Import VPC and Create EC2 on it with two EBS and EC2 UserData",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    author="author",
+    author="Huang, Zhuobin (James)",
 
     package_dir={"": "cdk_vpc_ec2"},
     packages=setuptools.find_packages(where="cdk_vpc_ec2"),

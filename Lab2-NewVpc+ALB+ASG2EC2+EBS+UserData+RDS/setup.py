@@ -6,14 +6,14 @@ with open("README.md") as fp:
 
 
 setuptools.setup(
-    name="cdk_vpc_ec2",
-    version="0.0.1",
+    name="Create_VPC_ALB_ASG",
+    version="1.0.0",
 
-    description="CDK Example of VPC EC2 RDS",
+    description="Create new VPC and ALB/AutoscalingGroup in it",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    author="author",
+    author="Huang, Zhuobin (James)",
 
     package_dir={"": "cdk_vpc_ec2"},
     packages=setuptools.find_packages(where="cdk_vpc_ec2"),
